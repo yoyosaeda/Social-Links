@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 350px;
+    height: 500px;
+    background-color: hsl(0, 0%, 12%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 70px;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+}
+
+.container .image {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+
+}
+
+.container .image img {
+    max-width: 60px;
+    border-radius: 50%;
+}
+
+.container .text {
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+.container h3 {
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.container h4 {
+    text-align: center;
+    color: hsl(75, 94%, 57%);
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.container p {
+    text-align: center;
+    color: #777;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.container .boxes ul {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container .boxes ul li {
+    background-color: hsl(0, 0%, 20%);
+    font-size: 16px;
+    padding: 15px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 10px;
+    list-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .boxes ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .boxes ul li:hover {
+    transform: translateY(-5px) rotate(1deg);
+    transform-origin: 50%;
+}
